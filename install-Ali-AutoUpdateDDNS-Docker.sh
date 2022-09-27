@@ -24,7 +24,7 @@ read_config()
     accessKeySecret=$(whiptail --title "AutoUpdateDDNS Docker辅助脚本" --inputbox "请输入accessKeySecret:" 10 40 3>&1 1>&2 2>&3)
     domain=$(whiptail --title "AutoUpdateDDNS Docker辅助脚本" --inputbox "请输入域名:" 10 40 3>&1 1>&2 2>&3)
     rr=$(whiptail --title "AutoUpdateDDNS Docker辅助脚本" --inputbox "请输入主机记录值:" 10 40 www 3>&1 1>&2 2>&3)
-    ipVersion=$(whiptail --title "AutoUpdateDDNS Docker辅助脚本" --inputbox "请输入解析类型:" 10 40 IPv6 3>&1 1>&2 2>&3)
+    ipVersion=$(whiptail --title "AutoUpdateDDNS Docker辅助脚本" --inputbox "请输入解析类型(IPv4/IPv6):" 10 40 IPv6 3>&1 1>&2 2>&3)
 
     whiptail --title "AutoUpdateDDNS Docker辅助脚本" --yesno "容器名字:$container_name \
         accessKeyId:$accessKeyId \
